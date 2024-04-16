@@ -1,0 +1,101 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 10500.0,
+    "radiusDifficultyScale": {},
+    "gravity": 0.07,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 1000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "significant": true,
+    "rotateCamera": true
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "Proteus",
+      "planetTextureCutout": 0.99,
+      "surfaceTexture_A": "Ice",
+      "surfaceTextureSize_A": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "surfaceTexture_B": "Ice",
+      "surfaceTextureSize_B": {
+        "x": 70.0,
+        "y": 25.0
+      },
+      "terrainTexture_C": "Ice",
+      "terrainTextureSize_C": {
+        "x": 1200.0,
+        "y": 400.0
+      },
+      "surfaceLayerSize": 60.0,
+      "minFade": 0.0,
+      "maxFade": 0.6,
+      "shadowIntensity": 4.0,
+      "shadowHeight": 2.0
+    },
+    "terrainFormulaDifficulties": {
+      "Normal": [
+        "OUTPUT = AddHeightMap( Perlin,1675.51608191456, 3.0, Pow3)",
+        "OUTPUT = AddHeightMap( Perlin,4243.19007757582, 8.0, Pow3)",
+        "OUTPUT = AddHeightMap( Perlin,13069.0254389335, 30, Pow3)",
+        "OUTPUT = AddHeightMap( Perlin,1089.08545324446, 2.0, Pow3)"
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": []
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 500.0,
+        "shadowIntensity": 1.4,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.05,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 15000.0,
+        "shadowIntensity": 1.65,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.025,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Neptune",
+    "semiMajorAxis": 5882350.0,
+    "smaDifficultyScale": {},
+    "eccentricity": 0.00053,
+    "argumentOfPeriapsis": 312.0,
+    "direction": 1,
+    "multiplierSOI": 3.0,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": []
+}
